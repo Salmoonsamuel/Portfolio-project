@@ -22,5 +22,21 @@ body{
     background-color: rgb(202, 174, 120);
 }
 img{
-    border-radius: 30px;
+    /* border-radius: 10px; */
 }
+.carousel {
+    border: solid 10px rgba(0, 0, 0, 0.4);; 
+    border-radius: 10px;
+    
+}
+  
+  .carousel-caption {
+      color: red;
+      text-shadow: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8); }
+  
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100; }
