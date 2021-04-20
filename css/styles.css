@@ -22,14 +22,13 @@ body{
     background-color: rgb(202, 174, 120);
 }
 
-}
+
 .carousel {
-    border: solid 10px rgba(0, 0, 0, 0.4);; 
+    border: solid 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    
 }
   
-  /* .carousel-caption {
+  .carousel-caption {
       color: red;
       text-shadow: rgba(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.8); }
@@ -38,23 +37,28 @@ body{
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: 100; } */
+    z-index: 100; }
 
     
 
     .breadcrumb {
-        background-color:  rgb(236, 196, 143); ;
+        background-color:  rgb(236, 196, 143); 
     }
 
     .cl {
-        background-color:  rgb(236, 196, 143);
+        background-color:  rgba(92, 73, 49, 0.3);
         border: solid 4px lightslategray;
     }
 
     .cli {
-        background-color: rgb(202, 174, 120);
+        background-color: rgb(202, 174, 120, 0.2);
     }
     a{
         color: teal;
-        text-shadow:  ;
+    }
+
+    h3{
+        display:inline-block;
+        text-shadow: 1px 1px black;
+        margin-bottom: 25px;
     }
