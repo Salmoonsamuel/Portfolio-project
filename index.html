@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
       <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
       <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
       <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
@@ -18,27 +19,22 @@
 <body>
          <!---Header content-->
      
-    <header class="jumbotron jumbotron-fluid">
+    <header class="jumbotron ">
         <div >
             <a class="text-dark" href="index.html"> <h1><i class="fa fa-leaf fa-lg offset-1"></i> Ss Foods</h1></a>
         </div>
     </header>
     <!----NAvbar elements-->
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top offset-">
         <div class="container">
            <a class="navbar-brand" href="index.html"></a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ssNavbar"><span class="navbar-toggler-icon"></span></button>
            <div class="collapse navbar-collapse" id="ssNavbar">
-               <ul class="navbar-nav">
+               <ul class="navbar-nav  fs-5 fw-bold">
                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-sm"></i> Home</a></li>
                    <li class="nav-item" > <a class="nav-link " href="aboutus.html"><i class="fa fa-info fa-sm p-1"></i>About</a></li>
                    <li class="nav-item" ><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-sm p-1"></i>Contact</a></li>
                </ul>
-               <span class="navbar-text ml-auto">
-                   <a type="button" data-toggle="modal" data-target="#loginModal">
-                       <i class="fa fa-sign-in p-2"></i>Login
-                   </a>
-               </span>
            </div>
         </div>
      </nav>
@@ -49,10 +45,10 @@
     <div class="container">
         <div class="row row-content text-center offset-1">
             <div class="col-sm-10 ">
-                <h2>Get your Craving Food in One click!</h2>
+                <h2 class="fw-bold">Get your Craving Food in One click!</h2>
             </div>
             <div class="col-sm-10 mt-4 ">
-                <p>Order Food from your choice of restaurant. <br> We will deliver to you with best price and quickly</p>
+                <p class="fw-bold">Order Food from your choice of restaurant. <br> We will deliver to you with best price and quickly</p>
             </div>
             <div class="col-sm-10 mt-4">
              
@@ -101,65 +97,56 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 input-group offset-4 mt-4">
-                <input class="cl" type="text"  placeholder="Zip-code" >
+            <div class="col-sm-10 input-group offset-4 mt-4 mb-4">
+                <input class="cli" type="text"  placeholder="Zip-code" >
                 <div class="input-group-append">
                   <button class="btn btn-info" type="button" id="button-addon2">Submit</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="row mt-4 text-center">
-            <div class="col mt-4">
-                <h3 class="cli text-info" >Follow the process</h3>
-                <div id="accordion">
-                    <div class="card cli  border border-secondary rounded-pill ">
-                        <div role="tab" class="card-header">
-                            <h4>
-                               <a class="collapsed" data-toggle="collapse" data-target="#signUp">
-                                  Sign-up <small> for an Account</small>
-                               </a>
-                            </h4>
-                            <div class="collapse show" id="signUp" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">Register/sign-up for an account with your personal details and a credit card.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container mt-4">
 
-                    <div class="card cli border border-secondary rounded-pill ">
-                        <div role="tab" class="card-header">
-                            <h4>
-                                <a class="collapsed" data-toggle="collapse" data-target="#order">
-                                   Order your food <small>from your choice of restaurant</small>
-                                </a>
-                            </h4>
-                            <div class="collapse" id="order" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">Provide us your receipt number and we will pickup your food.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card cli border border-secondary rounded-pill ">
-                        <div role="tab" class="card-header">
-                            <h4>
-                                <a class="collapsed" data-toggle="collapse" data-target="#zip">
-                                    Enter Zip-code <small>Search for nearest driver</small>
-                                </a>
-                            </h4>
-                            <div class="collapse" id="zip" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">Choose the nearest driver and check for the estimated time for delivery.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class= "row accordion  text-center" id="accordionExample">
+            <h3>How it works:</h3>
+            <div class="accordion-item cli">
+              <h2 class="accordion-header mt-2" id="headingOne">
+                <button class="accordion-button cli collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Sign-up for an account:</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Register / Sign-up</strong> for an account with your personal details and a credit card. 
                 </div>
+              </div>
             </div>
-        </div>
+            <div class="accordion-item cli">
+              <h2 class="accordion-header mt-2" id="headingTwo">
+                <button class="accordion-button cli collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong>Order food from your choice of restaurant:</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Provide us your receipt number</strong> and we will pickup your food and deliver to your address.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item cli">
+              <h2 class="accordion-header mt-2" id="headingThree">
+                <button class="accordion-button cli collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong>Search for nearest driver:</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Enter your zip-code above and search for nearest driver, and check for estimated time for delivery</strong>
+                </div>
+              </div>
+            </div>
+          </div>
 
     </div>
 
@@ -170,15 +157,15 @@
         <div class="container">
             <div class="row">             
                 <div class="col-4 col-sm-2 offset-1">
-                    <h5>Pages</h5>
-            		<ul class="list-unstyled">
-                        <li><a class="text-info" href="index.html">Home</a></li>
-                        <li><a class="text-info" href="aboutus.html">About</a></li>
-                        <li><a class="text-info" href="contactus.html">Contact</a></li>
+                    <h5 class="bg-dark text-center text-info p-1">Pages:</h5>
+            		<ul class="list-unstyled text-center">
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a  href="aboutus.html">About</a></li>
+                        <li><a  href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
-                	<h5 >Follow us:</h5>
+                	<h5 class="bg-dark text-info p-1">Follow us:</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
@@ -186,18 +173,20 @@
                 </div>
 
                 <div class="col-sm-4 text-center">
-                    <h5>Contact</h5>
-                    <a role="button" class="text-info" href="tel:+7186744990"><i class="fa fa-phone fa-lg text-info"></i> Tel: tel:+7186744990</a>
+                    <h5 class=" bg-dark text-info p-1">Contact us:</h5>
+                    <a role="button"  href="tel:+7186744990"><i class="fa fa-phone fa-lg text-dark"></i> Tel: tel:+7186744990</a>
                     <br>
-                    <a role="button" class="text-info" href="salmoonsamuel08@gmail.com"> <i class="fa fa-envelope fa-lg text-info"></i>Email: salmoonsamuel08@gmail.com</a>
+                    <a role="button"  href="salmoonsamuel08@gmail.com"> <i class="fa fa-envelope fa-lg text-dark"></i>Email: salmoonsamuel08@gmail.com</a>
                 </div>                
            </div>
         </div>
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
  
    

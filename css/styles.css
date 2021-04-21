@@ -24,7 +24,7 @@ body{
 
 
 .carousel {
-    border: solid 10px rgba(0, 0, 0, 0.4);
+    border: solid 6px black;
     border-radius: 10px;
 }
   
@@ -47,11 +47,12 @@ body{
 
     .cl {
         background-color:  rgba(92, 73, 49, 0.3);
-        border: solid 4px lightslategray;
+        border: solid 1px black;
     }
 
     .cli {
         background-color: rgb(202, 174, 120, 0.2);
+        border: solid 1px black;
     }
     a{
         color: teal;
@@ -62,3 +63,8 @@ body{
         text-shadow: 1px 1px black;
         margin-bottom: 25px;
     }
+
+    /* h2 {
+        background-color:  rgb(202, 174, 120, 0.2);
+    } */
+    
