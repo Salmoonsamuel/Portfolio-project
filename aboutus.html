@@ -4,78 +4,88 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/styles.css" />
-          <link rel="stylesheet" href="css/styles.css" />
+    
+          
     
         <title>Ss-Foods |Home</title>
     
     </head>
     <body>
          <!---Header content-->
-         
-         <header class="jumbotron jumbotron-fluid">
-            <div>
-                <h1 class="offset-1"><i class="fa fa-leaf fa-lg"></i> Ss Foods</h1>
-    
-            </div>
-        </header>
-        <!----NAvbar elemnts-->
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <header class="jumbotron jumbotron-fluid">
             <div class="container">
-               <a class="navbar-brand" href="index.html"><i class="fa fa-leaf fa-lg "></i> </a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ssNavbar"><span class="navbar-toggler-icon"></span></button>
-               <div class="collapse navbar-collapse" id="ssNavbar">
-                   <ul class="navbar-nav">
-                       <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                       <li class="nav-item" > <a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About</a></li>
-                       <li class="nav-item" ><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
-                   </ul>
-                   <span class="navbar-text ml-auto">
-                       <a role="button" data-toggle="modal" data-target="#loginModal">
-                           <i class="fa fa-sign-in"></i>Login
-                       </a>
-                   </span>
-               </div>
+              <div class="row">
+                <div class="col-4 col-sm-6  align-self-center">
+                 <a class="text-dark" href="index.html"> <h1><i class="fa fa-leaf fa-lg offset-1"></i> Ss Foods</h1></a>
+                </div>
+              </div>
             </div>
-         </nav>
-     
-        
-    
-          <!---Footer---->
-    
-        <footer class="site-footer">
+          </header>
+          <main>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+                <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     <div class="navbar-nav offset-3">
+                       <a class="nav-link active" aria-current="page" href="#">Home</a>
+                       <a class="nav-link" href="aboutus.html">About</a>
+                      <a class="nav-link" href="contactus.html">Contact</a>
+                     </div>
+                  </div>
+                </div>
+              </nav>
+              <div class="container">
+                  <div class="row">
+                     <div class="col">
+                         <ol class="breadcrumb">
+                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                             <li class="breadcrumb-item active">About-us</li>
+                         </ol>
+                         <h2>About</h2>
+                         <hr />
+                      </div>
+                 </div> 
+              </div>
+          </main>
+          <footer class="site-footer">
             <div class="container">
-                <div class="row">             
-                    <div class="col-4 col-sm-2 offset-1">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a class="text-info" href="index.html">Home</a></li>
-                            <li><a class="text-info" href="aboutus.html">About</a></li>
-                            <li><a class="text-info" href="contactus.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-sm-5 text-center">
-                        <h5 >Social</h5>
-                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <a role="button" class="text-info" href="tel:+7186744990"><i class="fa fa-phone fa-lg text-info"></i> Tel: tel:+7186744990</a><br />
-                        <a role="button" class="text-info" href="salmoonsamuel08@gmail.com"> <i class="fa fa-envelope fa-lg text-info"></i>Email:salmoonsamuel08@gmail.com</a>
-                    </div>                
-               </div>
+              <div class="row">             
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5 class="bg-dark text-center text-info p-1">Pages:</h5>
+                    <ul class="list-unstyled text-center">
+                       <li><a  href="index.html">Home</a></li>
+                       <li><a  href="aboutus.html">About</a></li>
+                       <li><a  href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5 class="bg-dark text-info p-1">Follow us:</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+          
+                <div class="col-sm-4 text-center">
+                   <h5 class=" bg-dark text-info p-1">Contact us:</h5>
+                   <a role="button"  href="tel:+7186744990"><i class="fa fa-phone fa-lg text-dark"></i> Tel: tel:+7186744990</a>
+                   <br>
+                   <a role="button"  href="salmoonsamuel08@gmail.com"> <i class="fa fa-envelope fa-lg text-dark"></i>Email: salmoonsamuel08@gmail.com</a>
+                </div>                
+              </div>
             </div>
-        </footer>
-        
-        <script src="node-modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node-modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node-modules/bootstrap/dist/js/bootstrap.min.js"></script>
+          </footer>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
     </body>
 </html>    

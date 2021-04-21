@@ -31,7 +31,7 @@ body{
   .carousel-caption {
       color: red;
       text-shadow: rgba(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.6); }
   
   #carouselButton {
     position: absolute;
@@ -67,4 +67,10 @@ body{
     /* h2 {
         background-color:  rgb(202, 174, 120, 0.2);
     } */
-    
+    /* img{
+      
+        height: 500px;
+    } */
+    .smargin {
+        margin-left:25px;
+    }
