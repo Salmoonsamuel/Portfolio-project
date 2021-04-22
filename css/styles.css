@@ -29,9 +29,9 @@ body{
 }
   
   .carousel-caption {
-      color: red;
-      text-shadow: rgba(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6); }
+      color: whitesmoke;
+      text-shadow: 3px 1px black;
+    background-color: rgba(107, 121, 104, 0.6)}
   
   #carouselButton {
     position: absolute;
@@ -72,5 +72,5 @@ body{
         height: 500px;
     } */
     .smargin {
-        margin-left:25px;
+        margin-left:15px;
     }
