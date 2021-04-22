@@ -29,21 +29,25 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-           <div class="navbar-nav offset-2">
+        <div class="row collapse navbar-collapse offset-1" id="navbarNavAltMarkup">
+           <div class="col-6 col-sm-7 col-lg-6 navbar-nav">
              <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i> Home</a>
              <a class="nav-link" href="aboutus.html"><i class="fa fa-info"></i>About</a>
             <a class="nav-link" href="contactus.html"><i class="fa fa-address-card"></i>Contact</a>
            </div>
-           <div class="offset-4">
-            <a role="button" class="text-light" data-bs-toggle="modal" data-bs-target="#signInModal">
-              Sign-In 
-            </a>
-           </div>
-           <div class="smargin">
-            <a role="button" class="text-info" data-bs-toggle="modal" data-bs-target="#signUpModal">
-              Sign-Up 
-            </a>
+           <div class="col-12 col-sm-10 col-lg-6">
+             <div class="row">
+              <div class="col-6 col-sm-4 col-md-4 smargin">
+                <a role="button" class="text-light spadding" data-bs-toggle="modal" data-bs-target="#signInModal">
+                  <i class="fa fa-sign-in"></i>Sign-In 
+                </a>
+               </div>
+               <div class="col-6 col-sm-3 ">
+                <a role="button" class="text-info float-right" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                  <i class="fa fa-user-circle"></i>Sign-Up 
+                </a>
+               </div>
+             </div>
            </div>
         </div>
       </div>
@@ -150,6 +154,7 @@
     
     <div class="container">
       <div class="row row-content text-center offset-1">
+      
         <div class="col-sm-10 ">
             <h2 class="fw-bold">Get your Craving Food in One click!</h2>
         </div>
@@ -212,9 +217,9 @@
   
       <div class= "row accordion  text-center" id="accordionExample">
           <h3>How it works:</h3>
-          <div class="accordion-item cli">
+          <div class="accordion-item rounded cli">
               <h2 class="accordion-header mt-2" id="headingOne">
-              <button class="accordion-button cli collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button rounded-pill cli collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                  <strong>Sign-up for an account:</strong>
               </button>
               </h2>
@@ -223,9 +228,9 @@
                   <strong>Register / Sign-up</strong> for an account with your personal details and a credit card. 
               </div>
            </div>
-          <div class="accordion-item cli">
+          <div class="accordion-item rounded-pill cli">
               <h2 class="accordion-header mt-2" id="headingTwo">
-              <button class="accordion-button cli collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="accordion-button rounded-pill cli collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                  <strong>Order food from your choice of restaurant:</strong>
               </button>
               </h2>
@@ -235,9 +240,9 @@
                   </div>
               </div>
           </div>
-          <div class="accordion-item cli">
+          <div class="accordion-item rounded-pill cli">
              <h2 class="accordion-header mt-2" id="headingThree">
-             <button class="accordion-button cli collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             <button class="accordion-button rounded-pill cli collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <strong>Search for nearest driver:</strong>
              </button>
              </h2>
