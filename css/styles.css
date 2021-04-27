@@ -2,12 +2,13 @@ body{
     /* background-color:  rgb(236, 196, 143); */
     background-color: whitesmoke;
     /* background: linear-gradient(rgb(223, 133, 110), rgb(7, 93, 128), rgb(255, 166, 0)); */
-    font-family: "Open Sans", sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .jumbotron{
-    background-color: rgb(202, 174, 120);
-    padding: 30px;
+    /* background-color: rgb(202, 174, 120); */
+    /* color: #5a5a5a; */
+    /* padding: 30px; */
 }
 /* .navbar {
     background-color: #9dd686; 
@@ -20,13 +21,14 @@ body{
 .site-footer{
     padding: 20px 0 0 0;
     margin-top: 100px;
-    background-color: rgb(202, 174, 120);
+    background-color: #5a5a5a;
 }
 
 
 .carousel {
     border: solid 6px black;
-    border-radius: 10px;
+    
+  
 }
   
   .carousel-caption {
@@ -47,16 +49,18 @@ body{
     }
 
     .cl {
-        background-color:  rgba(92, 73, 49, 0.3);
+        /* background-color:  rgba(92, 73, 49, 0.3); */
+        color: #5a5a5a;
         border: solid 1px black;
     }
 
     .cli {
-        background-color: rgb(202, 174, 120, 0.2);
+        /* background-color: rgb(202, 174, 120, 0.2); */
+        color: #5a5a5a;
         border: solid 1px black;
     }
     a{
-        color: teal;
+        color: whitesmoke;
     }
 
     /* a, a:hover {
@@ -70,16 +74,40 @@ body{
         margin-bottom: 25px;
     }
 
-    /* h2 {
-        background-color:  rgb(202, 174, 120, 0.2);
-    } */
-    /* img{
-      
-        height: 500px;
-    } */
     .smargin {
         margin-left:130px;
     }
     .spadding{
         padding-left: 25px;
     }
+
+
+    /* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+    /* background-image: url(/images/food1\ pic.png); */
+  }
+  #myCarousel1{
+    background-image: url(/images/food1\ pic.png);
+  background-size:cover;
+  height:100%;
+  width:100%;
+  position: absolute;
+}
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    /* z-index: 10; */
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
